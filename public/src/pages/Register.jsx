@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom"; 
 import styled from "styled-components";
+import Logo from "../assets/logo.svg";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Register() {
     const handleSubmit = (event) => {
@@ -16,10 +19,10 @@ function Register() {
                 <form onSubmit={(event) => handleSubmit (event)}>
 
                     <div className="brand">
-                        <img src="" alt="" />
+                        <img src="logo" alt="logo" />
                         <h1>snappy</h1>
                     </div>
-                    <input type="text" placeholder="Username" name="username" onChange={(e) > handleChange(e)}/>
+                    <input type="text" placeholder="Username" name="username" onChange={(e) => handleChange(e)}/>
 
                     <input type="email" placeholder="Email" name="email" onChange={(e) => handleChange(e)}/>
 
