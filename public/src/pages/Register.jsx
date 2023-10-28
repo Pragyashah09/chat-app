@@ -17,6 +17,13 @@ function Register() {
         confirmPassword: "",
     });
     
+    useEffect(() => {
+        if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
+          navigate("/");
+        }
+    },[navigate]);
+
+    
     const handleValidation = () => {
         const { password, confirmPassword, username, email } = values;
         if (password !== confirmPassword) {
