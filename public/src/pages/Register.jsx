@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom"; 
 import styled from "styled-components";
 import Logo from "../assets/logo.svg";
-import "react-toastify/dist/ReactToastify.css";
 
 
 function Register() {
@@ -15,11 +14,11 @@ function Register() {
 
     return (
         <>
-            <FormContainer>
+            <formcontainer>
                 <form onSubmit={(event) => handleSubmit (event)}>
 
                     <div className="brand">
-                        <img src="logo" alt="logo" />
+                        <img src="" alt="" />
                         <h1>snappy</h1>
                     </div>
                     <input type="text" placeholder="Username" name="username" onChange={(e) => handleChange(e)}/>
@@ -37,7 +36,8 @@ function Register() {
 
                     </span>
                 </form>
-            </FormContainer>
+            </formcontainer>
         </>
     );
 };
+export default Register
