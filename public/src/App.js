@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chat from "./pages/Chat.jsx";
 import Login from "./pages/Login";
-import Register from "./pages/Register.jsx";
+import Register from "./pages/Register";
 export default function App() {
   return (
     <BrowserRouter>
