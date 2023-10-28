@@ -18,8 +18,8 @@ function Register() {
                 <form onSubmit={(event) => handleSubmit (event)}>
 
                     <div className="brand">
-                        <img src="" alt="" />
-                        <h1>snappy</h1>
+                        <img src={Logo.svg} alt="logo" />
+                        <h1>CHAT APP FOR THE UNIVERSE</h1>
                     </div>
                     <input type="text" placeholder="Username" name="username" onChange={(e) => handleChange(e)}/>
 
